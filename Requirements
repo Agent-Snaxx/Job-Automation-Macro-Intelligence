@@ -1,0 +1,16 @@
+# Core
+requests
+feedparser
+textblob
+yfinance
+pandas
+pycoingecko
+beautifulsoup4
+lxml
+playwright
+python-dotenv
+pyttsx3
+
+# Optional / extras
+pandas_ta
+playwright
