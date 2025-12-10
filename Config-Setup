@@ -1,0 +1,37 @@
+Two simple options:
+
+A — Recommended (edit plain file):
+
+Open interview_prep/sample_script.txt in any text editor.
+
+Replace all content with your new script (no Python editing needed).
+
+Save.
+
+Run python tts_prep.py. The script reads sample_script.txt first and uses that text for audio.
+
+B — Inline replacement (edit Python):
+
+Open interview_prep/tts_prep.py.
+
+Find the block:
+
+audio_script = """
+Welcome to the Eric Wilson Token Life Cycle — ETH Edition.
+...
+"""
+
+
+Replace the entire triple-quoted """ ... """ content with your new text (keep triple quotes).
+
+Save and run python tts_prep.py.
+
+Extra tips:
+
+Keep each paragraph separated by blank lines for natural pauses.
+
+Control speed: engine.setProperty('rate', 140) slower, 170 faster.
+
+Switch voice: engine.setProperty('voice', voices[1].id) for different voice.
+
+If audio is too long, break into multiple files (chunk sample_script.txt into parts, then run multiple times).
